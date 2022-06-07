@@ -1,0 +1,370 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#navbarSupportedContent .btn {
+  padding: 1rem 1.2rem;
+}
+
+#navbarSupportedContent .btn-hover:hover {
+  background-color: gainsboro;
+}
+
+#navbarSupportedContent .cart-i {
+  font-size: 30px;
+}
+
+#navbarSupportedContent .drop-link {
+  display: inline-block;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 1rem 1.2rem;
+  border-radius: 0.25rem;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+
+#cart {
+  background-color: #dedede;
+  padding: 48px 0%;
+}
+
+#cart #cart-inner {
+  background-color: whitesmoke;
+  width: 1040px;
+  margin: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 30px 1px #b6b6b6;
+          box-shadow: 0 0 30px 1px #b6b6b6;
+}
+
+#cart #cart-inner .progress-line-box .progress-line {
+  position: relative;
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#cart #cart-inner .progress-line-box .progress-line > div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+#cart #cart-inner .progress-line-box .progress-line .bar-line-left {
+  position: absolute;
+  left: 0px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 7px;
+  width: 75%;
+  background-color: #e6e6e6;
+  border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  #cart #cart-inner .progress-line-box .progress-line .bar-line-left {
+    width: 45%;
+  }
+}
+
+#cart #cart-inner .progress-line-box .progress-line .progress1::after {
+  content: '';
+  display: block;
+  height: 7px;
+  width: 100%;
+  background-color: #59dfa9;
+  border-radius: 50px;
+}
+
+#cart #cart-inner .progress-line-box .progress-line .progress2::after {
+  content: '';
+  display: block;
+  height: 7px;
+  width: 100%;
+  background-color: #59dfa9;
+  border-radius: 50px;
+}
+
+#cart #cart-inner .progress-line-box .progress-line .progress3::after {
+  content: '';
+  display: block;
+  height: 7px;
+  width: 100%;
+  background-color: #59dfa9;
+  border-radius: 50px;
+}
+
+#cart #cart-inner .progress-line-box .progress-line .curcle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #10b981;
+  border-radius: 50%;
+}
+
+#cart #cart-inner .progress-line-box .progress-line .curcle p {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+}
+
+#cart #cart-inner .OrderText {
+  padding-top: 20px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+#cart #cart-inner #Order-area p {
+  font-size: 10px;
+}
+
+#cart #cart-inner #Order-area input {
+  width: 2.3rem;
+  border-radius: 5px;
+  border: 1px solid #d7d7d7;
+}
+
+#cart #cart-inner #Order-area .head-img {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../Bootstrap_html_cut_image/Chicken momo.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+#cart #cart-inner #Order-area .head-img2 {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../Bootstrap_html_cut_image/Spicy Mexican potatoes.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+#cart #cart-inner #Order-area .head-img3 {
+  width: 60px;
+  height: 60px;
+  background-image: url("../../Bootstrap_html_cut_image/Breakfast.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+#cart #cart-inner #totle span:nth-child(1) {
+  font-size: 14px;
+  color: gray;
+}
+
+#cart #cart-inner #totle span:nth-child(2) {
+  font-weight: 600;
+}
+
+#cart #cart-inner #foot-button button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 50px;
+}
+
+#cart #cart-inner #foot-button button:hover {
+  background-color: #1263e6;
+}
+
+@media (max-width: 1040px) {
+  #cart #cart-inner {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #cart #cart-inner {
+    width: 450px;
+  }
+  #cart #cart-inner .p-text {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  #cart #cart-inner {
+    width: 100%;
+  }
+}
+
+#CATEGORIES {
+  padding: 96px 20px;
+}
+
+#CATEGORIES h5 {
+  font-size: 15px;
+}
+
+#CATEGORIES a {
+  color: black;
+  text-decoration: none;
+}
+
+#CATEGORIES .ps80 {
+  padding-left: 80px;
+}
+
+#CATEGORIES p {
+  font-size: 14px;
+}
+
+#CATEGORIES > div:nth-child(2) > div {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  #CATEGORIES {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  #CATEGORIES .ps80 {
+    padding: 0;
+  }
+  #CATEGORIES > div:nth-child(1) > div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+#map-area {
+  position: relative;
+  height: 700px;
+}
+
+#map-area .Feedback-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 100px;
+}
+
+@media (max-width: 768px) {
+  #map-area .Feedback-area {
+    padding: 0 25px;
+  }
+}
+
+#map-area .Feedback-area .Feedback {
+  width: 500px;
+  height: 80%;
+  margin-left: auto;
+  background-color: white;
+  border-radius: 15px;
+  padding: 35px 25px;
+  -webkit-box-shadow: 10px 20px 30px 5px #5a5a5a;
+          box-shadow: 10px 20px 30px 5px #5a5a5a;
+}
+
+#map-area .Feedback-area .Feedback p {
+  margin-bottom: 0%;
+}
+
+#map-area .Feedback-area .Feedback > p {
+  font-size: 13px;
+}
+
+#map-area .Feedback-area .Feedback h6 {
+  font-size: 19px;
+}
+
+#map-area .Feedback-area .Feedback input {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+#map-area .Feedback-area .Feedback .Message {
+  width: 100%;
+  resize: none;
+}
+
+#map-area .Feedback-area .Feedback .btn-primary {
+  background-color: #6366f1;
+}
+
+@media (max-width: 1400px) {
+  #map-area .Feedback-area .Feedback {
+    width: 450px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #map-area .Feedback-area .Feedback {
+    width: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  #map-area .Feedback-area .Feedback {
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  #map-area .Feedback-area .Feedback {
+    width: 100%;
+  }
+}
+
+#foot {
+  padding: 1rem 0;
+}
+
+#foot i, #foot p {
+  font-size: 20px;
+  margin: 0;
+  color: grey;
+}
+
+#foot .right > div {
+  margin: 0 0.5rem;
+}
+/*# sourceMappingURL=bootstrapWork_pg_cart_four.css.map */

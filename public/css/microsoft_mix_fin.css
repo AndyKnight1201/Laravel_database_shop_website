@@ -1,0 +1,523 @@
+/* ----------------------max-width:1450px------------------ */
+@media (max-width:1450px){
+    .options-right span:not(.Microsoft-button >span ,.cancel-search >span){
+        display: none;
+    }
+
+    .button-list{
+        width: 1200px;
+    }
+
+    .header-box ,.header-box-two{
+        max-width: 440px;
+    }
+
+    .header-box h2 ,.header-box-two h2{
+        font-size: 24px;
+    }
+
+    .list a:nth-child(2){
+        margin-top: 25px;
+        margin-right: 80px;
+    }
+}
+
+
+/* 單獨.button-list縮排 */
+@media (max-width:1250px){
+    .button-list{
+        width: 1000px;
+      
+    }
+}
+
+/* ----------------------max-width:1090px------------------ */
+@media (max-width:1090px){
+    .title{
+        height:54px;
+        background-color: rgb(255, 255, 255);
+        padding: 0 3%;
+        display: flex;
+        align-items: center;
+        position: relative;  
+    }
+
+    .container-full{
+        padding: 0;
+    }
+
+    .list-area{
+        flex-wrap: wrap;
+        padding-left:5% ;
+        padding-right:5% ;
+    }
+    .button-list{
+        width: 900px;
+      
+    }
+    .options-right .cancel-search{
+        transform: translate(60%,-40%);
+    }
+    
+    .header-box ,.header-box-two{
+        max-width: 350px;
+    }
+
+    .list{
+        width: 48%;
+    }
+    .title-heading{
+        padding-left:4% ;
+
+    }
+    .bot-options{
+        flex-wrap: wrap;
+        padding:0px 2.5%;
+        justify-content: space-between;
+    }
+    .bot-option-inner{
+        width: 32%;
+    }
+    .focus-box{
+        padding-left: 25px;      
+    }
+
+    .button{
+        padding: 30px 3% 20px;
+    } 
+    
+}
+
+/* 單獨.button-list縮排 */
+@media (max-width:980px){
+    .button-list{
+        width: 700px;
+      
+    }
+}
+
+/* ----------------------max-width:870px------------------ */
+@media (max-width:870px){
+
+
+    /* 收掉多餘的padding和區塊 */
+    .title{
+        padding: 0;
+    }
+
+    .options-left{
+        display: none
+    }
+    
+    .logo{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+    }
+
+    /* flex: 1將漢堡選單(Microsoft-button)搜尋放大鏡(search-box)
+    與購物車分開兩端，因為設置搜尋放大鏡的margin-right:auto使分開得以成立*/
+    .options-right{
+        flex: 1;
+        display: flex;
+        align-items: center;
+    }
+    
+    .user-icon{
+        transform: translate(10px,3px);
+    }
+    .search-box{
+        margin-right: auto;
+    }
+    
+
+    /* 因為要讓下拉選單的寬度變長和位置靠左，開始父層到子層同步設置
+    實驗性讓一些寬度100%馬掉看會不會影響版面。，*/   
+    .button-area{
+        width: 100%;
+        right: unset;
+        left: 0%;
+        top: 50px;
+    }
+
+    .button-list{
+        width: 100%;
+    }
+
+    .button-list .list-inner{
+        display: inline-block;
+        align-items: center;
+    }
+
+    .list-inner a{
+        display:block;
+    }
+
+    /* 以下一大串開始設置內部li和h5的版面和字體微調 */
+    .button-list ul{
+        width: 100%;
+        padding:unset;
+    }
+
+    .button-list >ul{
+        position: relative;
+    }
+
+    .list-inner li, .button-list h5{
+        padding: 17px 0px 17px 15px;
+        border-top: 0.5px solid rgb(230, 230, 230);
+        position: relative;
+        color: #000;
+    }
+    .button-list h5{
+        font-weight: 350;
+        font-size: 15px;
+    }
+    .list-inner li{
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    .inner-li li{
+        padding: 17px 0px 17px 45px;
+        border-top: 0.5px solid gainsboro;
+    }
+    .inner-li a{
+        font-weight: 350;
+        font-size: 15px;
+    }
+
+    .button-list h5::after{
+        content: '';
+        display:inline-block;
+        position: absolute;
+        top: 40%;
+        right: 5%; 
+        width: 7px;
+        height: 7px;
+        border-bottom: 1.5px solid #000;
+        border-right: 1.5px solid #000;
+        transform:rotate(45deg);
+    }
+
+    .button-list >ul>ul:focus >h5::after{
+        top: 50%;
+        transform:rotate(225deg);
+    }
+
+    .inner-li li:active{
+        border: 1px black;
+        border-style: dashed;
+    }
+
+
+
+    /* ---------漢堡選單開啟的設置---------- */
+    /* 把多餘的東西馬掉 */  
+    .Microsoft-button >span{
+        display: none;
+    }
+
+    .Microsoft-button {
+        width: 50px;
+        height: 50px;
+        padding: unset;
+        position: relative;
+    }
+
+    .Microsoft-button:focus{
+        background-color: white;
+    }
+    .Microsoft-button:active{
+        border: 2px solid #000;
+    }
+    .Microsoft-button:focus ~.button-close{
+        width: 50px;
+        height: 50px;
+    }
+
+
+    /* 漢堡選單三條黑線設置 */
+    .burger-link{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .lin{
+        width: 20px;
+        height: 1.5px;
+        background-color: black;
+        position: absolute;
+        left: 50%;    
+        transform: translate(-50%,-50%);  
+    }
+
+    .line1{
+        top: 40%;   
+    }
+
+    .line2{
+        top: 50%;
+    }
+
+    .line3{
+        top: 60%;
+    }
+
+
+
+    .Microsoft-button:focus .lin{
+        top: 50%;
+    }
+
+    .Microsoft-button:focus .line2{
+        transform: translate(-50%,-50%) ;
+    }
+
+    .Microsoft-button:focus .line1{
+        transform: translate(-50%,-50%) rotate(-45deg);
+        
+    }
+    .Microsoft-button:focus .line3{
+        transform: translate(-50%,-50%) rotate(45deg);
+    }
+
+    .Microsoft-button:focus .line2{
+        display: none;
+        transform: translate(-50%,-50%) ;
+    }
+
+
+
+
+    /* 漢堡內選單開關，比照Button-list*/
+    
+    .button-list >ul >ul{
+        cursor: pointer;
+    }
+
+
+    .inner-li{
+        display: none;
+    }
+
+    .inner-li:hover{
+        display: block;
+    }
+    
+    .button-list >ul >ul:focus >.inner-li{
+        display: block;
+    }
+
+    .button-list .ul-one:focus ~.close-one{
+        display: block;
+        border: 1px dashed black;
+    }
+    .button-list .ul-two:focus ~.close-two{
+        display: block;
+        border: 1px dashed black;
+    }
+    .button-list .ul-tree:focus ~.close-tree{
+        display: block;
+        border: 1px dashed black;
+    }
+    .button-list .ul-four:focus ~.close-four{
+        display: block;
+        border: 1px dashed black;
+    }
+    .button-list .ul-five:focus ~.close-five{
+        display: block;
+        border: 1px dashed black;
+    }
+    .button-list .ul-six:focus ~.close-six{
+        display: block;
+        border: 1px dashed black;
+    }
+
+    .li-close{
+        position: absolute;
+        top: 0;
+        left: 0%;
+        width: 100%;
+        height: 54px;
+        z-index: 3;
+        cursor: pointer;
+    }
+
+
+    .list a:nth-child(2){
+        margin-right: 20px;
+    }
+
+    .search-area{
+        width: calc(100% - 50px);
+        height: 54px;
+        z-index: 2;
+        padding-left: unset;
+        padding-right: 2%;
+    }
+    .search-area .input{
+        padding: 9px 38px 9px 40px;
+        margin-top: 10px;
+    }
+    .search-icon2{
+        right: unset;
+        left: 1%;
+        transform: translate(-0%,45%);
+    }
+    
+    .options-right .cancel-search{
+        height: 50px;
+        width: 50px;
+        left: 0%;
+        transform: translate(0%,-50%);
+    }
+}
+
+
+
+
+
+
+@media (max-width:790px){
+    
+    .header-box{
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.801);
+        width: 100%;
+        max-width:unset;
+        position:unset;
+        top: unset;
+        left: unset;
+        transform: translate(0%,0%);
+        z-index: unset;
+        text-align: center;
+        padding: 90px 40px;
+
+    }
+
+    .header-box p:nth-child(1){
+        font-weight: 600;
+        display: inline-block;
+        font-size: 15px;
+        padding: 4px 14px 6px 14px;
+        background-color: #ffbb00;
+    }
+    
+    .header-box p:nth-child(3){
+        font-size: 15px;
+        display: inline-block;
+        padding:10px 0px;
+    }
+    
+    .header-box h2{
+        font-size: 20px;
+        padding-top: 10px;
+        line-height: 20px;
+    }
+    
+    .header-box *:not(:first-child,:last-child){
+        color: white;
+    }
+    
+    .header-box a{
+        font-size: 15px;
+        background-color: white;
+        padding: 10px 20px 9px 10px;
+        position: relative;
+        transition: 0.3s;
+    }
+    
+    .header-box a::after{
+        content: '';
+        right: 10%; 
+        width: 7px;
+        height: 7px;
+    }
+
+    .header-box a:hover:after{
+        right: 8%;
+    }
+
+
+    .main-link-inner{
+        flex-direction:column;
+        justify-content: unset;
+        text-align: unset;
+        padding-top: 48px;
+        padding-left: 30px;
+        
+    
+    }
+    .nav-link{
+        display: flex;
+        width: 210px;
+        padding: 15px 0px 15px 10px;
+    }
+    
+    .nav-img{
+        width: 20px;
+    }
+
+    .short-text{
+        padding:0 0px;
+    }
+
+    .nav-link div{
+        font-weight: 600;
+        color: #000;
+        padding-left: 10px;
+    }
+
+    .nav-link:focus{
+        border: 2px solid black;
+        /* outline: 1px solid black; */
+        background-color: #ebf6ff;
+    }    
+
+
+
+
+    .header-box-two{
+        display: inline-block;
+        background-color: #e6e6e6;
+        width: 100%;
+        max-width:unset;
+        position:unset;
+        top: unset;
+        left: unset;
+        transform: translate(0%,0%);
+        z-index: unset;
+        text-align: center;
+        padding: 115px 40px;
+
+    }
+    
+    .header-box-two p:nth-child(2){
+        font-size: 15px;
+        display: inline-block;
+        padding:15px 0px;
+    }
+    
+    .header-box-two h2{
+        font-size: 19.5px;
+        line-height: 5px;
+    }
+
+    .button{
+        display:flex;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+        width: 100%;
+        padding: 30px 5% 16px;
+        background-color: #f2f2f2;      
+    }
+    .button li{
+        padding-top: 25px;
+        padding-right: 15px;
+    }
+
+}

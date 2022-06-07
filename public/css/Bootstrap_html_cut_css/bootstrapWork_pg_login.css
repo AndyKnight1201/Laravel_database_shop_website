@@ -1,0 +1,155 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body {
+  background-image: url("../../Bootstrap_html_cut_image/1920.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.607);
+}
+
+#login {
+  height: 100vh;
+  position: relative;
+}
+
+#login #login_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#login #login_left #text-left {
+  color: white;
+  padding: 0 96px;
+}
+
+#login #login_left #text-left h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+#login #login_left #OC-icon {
+  position: absolute;
+  bottom: 10px;
+}
+
+#login #login_left #OC-icon > div {
+  color: white;
+  font-size: 25px;
+  padding: 0 10px;
+}
+
+@media (max-width: 992px) {
+  #login #login_left {
+    display: none;
+  }
+}
+
+#login #login_right {
+  background-color: #162446;
+  position: relative;
+}
+
+#login #login_right h1 {
+  color: white;
+  margin: 0;
+  font-weight: 600;
+}
+
+#login #login_right #fake-icon {
+  padding: 24px 0;
+  color: white;
+}
+
+#login #login_right #fake-icon > div {
+  margin: 0px 7px;
+  width: 42px;
+  height: 42px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#login #login_right #fake-icon > div p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 19px;
+}
+
+#login #login_right #email-Pass-input {
+  padding: 0 20%;
+}
+
+#login #login_right #email-Pass-input input {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  border: 0;
+  font-weight: 600;
+}
+
+#login #login_right #email-Pass-input a {
+  text-decoration: none;
+  color: #a1a1a1;
+}
+
+#login #login_right button {
+  width: 55%;
+  padding: 1rem;
+  border-radius: 50px;
+  background-color: #6366f1;
+}
+
+#login #login_right #OC-icon-2 {
+  display: none;
+  margin-top: 64px;
+  bottom: 10px;
+  padding: 16px;
+}
+
+#login #login_right #OC-icon-2 > div {
+  color: white;
+  font-size: 25px;
+  padding: 0 10px;
+}
+
+@media (max-width: 992px) {
+  #login #login_right #OC-icon-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+  #login #login_right {
+    background-color: unset;
+  }
+}
+/*# sourceMappingURL=bootstrapWork_pg_login.css.map */
